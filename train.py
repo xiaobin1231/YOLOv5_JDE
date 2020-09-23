@@ -390,7 +390,7 @@ def train(hyp, opt, device, tb_writer=None):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--cfg', type=str, default='models/yolov5_JDE.yaml', help='model.yaml path')
-    parser.add_argument('--data', type=str, default='data/huawei.yaml', help='data.yaml path')
+    parser.add_argument('--data', type=str, default='data/mot.yaml', help='data.yaml path')
     parser.add_argument('--hyp', type=str, default='', help='hyp.yaml path (optional)')
     parser.add_argument('--epochs', type=int, default=100)
     parser.add_argument('--batch-size', type=int, default=8, help='total batch size for all GPUs')
