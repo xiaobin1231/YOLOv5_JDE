@@ -1,0 +1,24 @@
+root: /home/xb/data
+
+train: { mot17: ./mot_data/mot17.train,
+         caltech: ./mot_data/caltech.train,
+         cuhksysu: ./mot_data/cuhksysu.train,
+         prw: ./mot_data/prw.train,
+         eth: ./mot_data/eth.train
+       }
+
+test_emb: { cuhksysu: ./mot_data/cuhksysu.val,
+            prw: ./mot_data/prw.val
+          }
+
+
+test: { cuhksysu: ./mot_data/cuhksysu.val,
+        prw: ./mot_data/prw.val
+      }
+
+
+# number of classes
+nc: 1
+
+# class names
+names: ['person']
